@@ -12,6 +12,7 @@ import { OutputPanel } from "@/components/OutputPanel";
 import { FloatingOrbs } from "@/components/FloatingOrbs";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import "./index.css";
+import { Button } from "./components/ui/button";
 
 export function App() {
   const [selected, setSelected] = useState<Set<string>>(new Set());
@@ -105,10 +106,20 @@ export function App() {
           />
 
           <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+            <div className="w-full m-4 flex justify-between">
+              <a href="https://digitalheroesco.com/"><Button variant={"outline"} className="cursor-pointer">Built for digital heroes</Button></a>
+              <div className="flex flex-col">
+                  <h2 className="text-accent-foreground text-sm font-semibold">Tanishq Singh Bisht</h2>
+                  <h4 className="text-accent-foreground text-xs">Email : tanishq1172005@gmail.com</h4>
+              </div>
+              
+            </div>
+            
             {/* Search bar */}
             <div className="mt-8 mb-6 max-w-xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
+              
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.75_0.18_270/0.2)] via-[oklch(0.65_0.2_300/0.2)] to-[oklch(0.75_0.18_270/0.2)] rounded-xl blur-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-r from-[oklch(0.75_0.18_270/0.2)] via-[oklch(0.65_0.2_300/0.2)] to-[oklch(0.75_0.18_270/0.2)] rounded-xl blur-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500" />
                 <div className="relative">
                   <svg
                     className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground transition-colors group-focus-within:text-primary"
